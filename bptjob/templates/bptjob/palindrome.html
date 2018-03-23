@@ -1,0 +1,21 @@
+<!-- This is a form template for the palindrome -->
+
+<html>
+    <head>
+        <title>Palindrome</title>
+    </head>
+    <body>
+        <div>
+            <h1>Enter Palindrome</h1>
+        </div>
+
+        <form action="./" method="post">
+          {% csrf_token %}
+          {{ form }}
+          <input type="submit" value="Submit" />
+        </form>
+        <div>{{message}}</div>
+        <div>Your input was {{ palindrome }}</div>
+
+    </body>
+</html>
